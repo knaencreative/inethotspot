@@ -1,0 +1,144 @@
+<!-- 
+Login Page Hotspot Responsive
+Design by Rapani Loebis
+Website : https://proxy-id.com
+Facebook : https://www.facebook.com/rapani.loebis
+Menerima jasa setting Mikrotik, hotspot dan  Proxy  
+
+Note : Untuk memperkecil ukuran login page 
+silahkan compress File gambar dengan format factory atau sejenisnya 
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Logout Hotspot</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+      <link rel="stylesheet" href="css/font.css">
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="js/template-scripts.js"></script> 
+   </head>
+   <body class="size-1140">
+      <!-- TOP NAV WITH LOGO -->
+      <header>
+         <div id="topbar">
+            <div class="line">
+               <div class="s-12 m-6 l-6">
+                  
+               </div>
+               <div class="s-12 m-6 l-6">
+                  <div class="social right">
+                  </div>
+               </div>
+            </div>  
+         </div> 
+         <nav>
+            <div class="line">
+               <div class="s-12 l-2">
+                  <p class="logo"><strong>SMK IT JH</strong>Hotspot</p>
+               </div>
+               <div class="top-nav s-12 l-10">
+                  <p class="nav-text">Menu</p>
+                  <ul class="right">
+                     <li class="active-item"><a href="login.html">Login</a></li>
+                     <li><a href="price.html">Paket Hotspot</a></li>
+                    
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>  
+      <section>
+         
+        <!-- CONTACT -->
+         <div id="contact">
+            <div class="line">
+               <br>
+               <div class="margin">
+                  
+                  <div class="s-12 m-12 l-4 margin-bottom">
+                  </div>
+                  <div class="s-12 m-12 l-5">
+				  
+				   $(if error)  <h3> $(error)</h3> $(endif)
+			
+					<h3 align="center">Terima Kasih $(username) sudah menggunakan Layanan Hotspot kami team IT SMK IT JH Bagik Papan</h3>
+				
+                    <table width="200" border="0">
+  <tr>
+    <td>Username</td>
+    <td>:</td>
+    <td>$(username)</td>
+  </tr>
+  <tr>
+    <td>IP Address</td>
+    <td>:</td>
+    <td>$(ip)</td>
+  </tr>
+  <tr>
+    <td>MAC Address</td>
+    <td>:</td>
+    <td>$(mac)</td>
+  </tr>
+  <tr>
+    <td>Kuota</td>
+    <td>:</td>
+    <td>$(if limit-bytes-out) <script language=javascript>result = $(limit-bytes-out)/1000 
+									document.write(result)</script> Kib
+									$(endif)
+									$(if limit-bytes-out == '')Unlimited$(endif)</td>
+  </tr>
+  <tr>
+    <td>Session Time</td>
+    <td>:</td>
+    <td>$(session-timeout)$(if session-timeout == '')Unlimited$(endif)</td>
+  </tr>
+  
+  <tr>
+    <td>Up/Down</td>
+    <td>:</td>
+    <td>$(bytes-in-nice) / $(bytes-out-nice) $(if session-time-left)</td>
+  </tr>
+   <tr>
+   
+    <td>Connected / Left</td>
+    <td>:</td>
+    <td>$(uptime) / $(session-time-left) $(else)</td>
+  </tr>
+  
+   <tr>
+    <td>Waktu terpakai</td>
+    <td>:</td>
+    <td>$(uptime)</td>
+  </tr>
+  $(endif)
+$(if refresh-timeout)
+  <tr>
+    <td>Status Refresh</td>
+    <td>:</td>
+    <td>$(refresh-timeout)</td>
+  </tr>
+  $(endif)
+  
+</table>
+					
+					
+                  </div>                
+               </div>
+            </div>
+         </div>
+
+      <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      
+   </body>
+</html>
